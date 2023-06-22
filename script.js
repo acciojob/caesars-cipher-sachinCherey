@@ -35,7 +35,7 @@ function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
   for(let i=0;i<encodedStr.length;i++){
-	 for (let x = 0; x < lookup.keys() ; x++) {
+	 for (let x in lookup) {
 	 	if(encodedStr[i]==lookup[x] && (lookup[x]!="?"&&lookup[x]!=",")){
 			decodedArr.push(lookup[x]);
 			break;
