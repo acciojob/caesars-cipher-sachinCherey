@@ -39,7 +39,7 @@ function rot13(encodedStr) {
   for(let i=0;i<encodedStr.length;i++){
 	  flag=0;
 	 for (let x in lookup) {
-	 	if(encodedStr[i]==lookup[x] && (lookup[x]!="?"&&lookup[x]!=",")){
+	 	if(encodedStr[i]==x && (lookup[x]!="?"&&lookup[x]!=",")){
 			decodedArr.push(lookup[x]);
 			flag=1;
 			break;
